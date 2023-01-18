@@ -24,17 +24,27 @@ input {
 
 body {
     background: rgb(24, 24, 24);
-    color: #ffffff;
+    color: #f2f2f2;
     letter-spacing: .1rem;
 }
-p{
-    word-wrap:break-word; 
-    word-break:normal;
-    line-height:1.5;
+a{
+    color: #ababab;
+    text-decoration:underline;
 }
-.ml-1{
+a:hover{
+    color: #868686;
+    text-decoration:underline;
+}
+p {
+    word-wrap: break-word;
+    word-break: normal;
+    line-height: 1.5;
+}
+
+.ml-1 {
     margin-left: 1rem;
 }
+
 .logo {
     width: 8em;
     height: 3.5em;
@@ -48,44 +58,59 @@ p{
     line-height: 5em;
     font-size: 28px;
 }
+
 .people-info {
     display: inline-block;
     font-size: 1em;
     margin: 0;
     font-weight: bold;
 }
+
 .chef {
     border: 0;
     border-style: solid;
     border-color: green;
-    padding: 0px; 
-    margin: 0px; 
-}
-.more {
     padding: 0px;
-    margin: 0em;
+    margin: 0px;
 }
-.scm{
-position: absolute;
-right: 90px;
-display: flex;
-z-index: 2;
+
+.nav-logo{
+    position: absolute;
+    width: 80px;
+    overflow: hidden;
+    top: 16px;
+    left: 40px;
+    display: flex;
+    z-index: 2;
 }
-.scm a{
+.nav-logo img{
+   width: 100%;
+}
+.scm {
+    position: absolute;
+    right: 80px;
+    display: flex;
+    z-index: 2;
+}
+
+.scm a {
     display: block;
     color: #fff;
     font-size: 28px;
-    padding: 30px 10px;
+    padding: 20px 10px;
 }
+
 .scm a:hover {
     color: rgb(184, 184, 184);
 }
+
 @media (max-width: 992px) {
-    .scm a{
+    .scm a {
         font-size: 26px;
-        padding: 32px 10px;
+        padding: 20px 10px;
     }
 }
+
 .section-img {
     background: url(../images/mountain.png);
     background-position: center center;
@@ -103,7 +128,7 @@ z-index: 2;
 }
 
 .section-imgtext--img {
-    width: 50%;
+    width: 35%;
     height: 100%;
     overflow: hidden;
 }
@@ -116,41 +141,59 @@ z-index: 2;
 }
 
 .section-imgtext--text {
-    width: 50%;
+    width: 65%;
     height: 100%;
     text-align: center;
 }
 
-.section-imgtext--text div {
+.section-imgtext--text>div {
     padding: 24px;
 }
 
 .section-imgtext--text h2 {
     margin-top: 56px;
+    margin-bottom: 120px;
 }
-
+.circle-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ababab;
+    overflow: hidden;
+}
 @media (max-width: 992px) {
     .section-imgtext--img {
         width: 100%;
-        height: 50%;
+        height: 25%;
         order: 0;
     }
 
     .section-imgtext--text {
         width: 100%;
-        height: 50%;
+        height: 75%;
         order: 1;
     }
+
     .section-imgtext--text h2 {
-        margin-top: 32px;
+        margin-top: 24px;
+        margin-bottom: 48px;
     }
-    
+
 }
 
 .section-text {
     position: relative;
     padding: 24px;
     text-align: center;
+}
+.section-text h2{
+  margin-bottom: 120px;
+}
+@media (max-width: 992px) {
+    .section-text h2{
+        margin-bottom: 48px;
+      }
+
 }
 #goReserve {
     background: rgba(255, 255, 255, 0.198);
@@ -166,6 +209,7 @@ z-index: 2;
     box-shadow: 0 0 10px #000000;
     font-size: 12px;
 }
+
 #goTop {
     background: rgba(255, 255, 255, 0.198);
     position: absolute;
@@ -215,7 +259,7 @@ footer a {
 }
 
 .mouse {
-    margin: 0 auto;
+    margin: 10px auto;
     display: block;
     border-radius: 50px;
     border: 2px solid #fff;
