@@ -152,11 +152,11 @@ p {
 
 .section-imgtext--text h2 {
     margin-top: 56px;
-    margin-bottom: 120px;
+    margin-bottom: 56px;
 }
 .circle-img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background: #ababab;
     overflow: hidden;
@@ -187,7 +187,7 @@ p {
     text-align: center;
 }
 .section-text h2{
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 @media (max-width: 992px) {
     .section-text h2{
