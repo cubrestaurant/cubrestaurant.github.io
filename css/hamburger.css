@@ -51,7 +51,16 @@
   height: 2px;
   background: inherit;
 }
-
+@media (max-width: 576px) {
+  .menu-wrap .hamburger {
+    width: 60px;
+    height: 60px;
+  }
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    width: 30px;
+  }
+}
 /* Move one of the lines down */
 .menu-wrap .hamburger > div::after {
   top: 10px;
