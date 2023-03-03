@@ -27,14 +27,17 @@ body {
     color: #f2f2f2;
     letter-spacing: .1rem;
 }
-a{
+
+a {
     color: #ababab;
-    text-decoration:underline;
+    text-decoration: underline;
 }
-a:hover{
+
+a:hover {
     color: #868686;
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
 p {
     word-wrap: break-word;
     word-break: normal;
@@ -58,7 +61,9 @@ p {
     line-height: 5em;
     font-size: 28px;
 }
-
+#fullpage{
+    max-height: 100vh;
+}
 .people-info {
     display: inline-block;
     font-size: 1em;
@@ -74,7 +79,7 @@ p {
     margin: 0px;
 }
 
-.nav-logo{
+.nav-logo {
     position: absolute;
     width: 80px;
     overflow: hidden;
@@ -83,16 +88,19 @@ p {
     display: flex;
     z-index: 2;
 }
-.nav-logo img{
-   width: 100%;
+
+.nav-logo img {
+    width: 100%;
 }
+
 @media (max-width: 576px) {
-    .nav-logo{
+    .nav-logo {
         top: 24px;
         width: 60px;
     }
 
 }
+
 .scm {
     position: absolute;
     right: 80px;
@@ -117,21 +125,25 @@ p {
         padding: 20px 10px;
     }
 }
+
 @media (max-width: 576px) {
     .scm {
-     display: none;
+        display: none;
     }
 
 }
-.section h2{
+
+.section h2 {
     margin: 40px;
 }
+
 @media (max-width: 576px) {
-    .section h2{
-        margin-bottom: 20px;
+    .section h2 {
+        margin: 20px;
     }
 
 }
+
 .section-img {
     background: url(../images/mountain.png);
     background-position: center center;
@@ -163,28 +175,25 @@ p {
 .section-imgtext--text {
     width: 65%;
     height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
     text-align: center;
 }
+.section-imgtext--text::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
 
+.section-imgtext--text::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .7);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 .section-imgtext--text>div {
     padding: 12px;
 }
 
-.chef-intro{
-    margin: 36px;
-}
-.chef-intro--img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #ababab;
-    overflow: hidden;
-    margin-bottom: 24px;
-}
 @media (max-width: 992px) {
-    .chef-intro{
-        margin: 24px;
-    }
     .section-imgtext--img {
         width: 100%;
         height: 25%;
@@ -197,53 +206,143 @@ p {
         order: 1;
     }
 
-    .section-imgtext--text  {
+    .section-imgtext--text {
         margin-top: 24px;
         margin-bottom: 48px;
     }
-    .chef-intro--img{
-        width: 150px;
-        height: 150px;
-    }
 }
-@media (max-width: 576px) {
+
+@media (max-width: 768px) {
     .section-imgtext--img {
         height: 0;
     }
-    .chef-intro{
-        display: flex;
-        flex-wrap: nonwrap;
-        margin: 24px 0;
-    }
-    .chef-intro--img{
-        width: 100px;
-        height: 100px;
-    }
-    .chef-intro--text{
-        width: 150px;
-        text-align: left;
-        margin-left: 24px;
-    }
 }
+
 .section-text {
     position: relative;
     padding: 24px;
     text-align: center;
 }
-.section-text {
-  margin-bottom: 80px;
+.section-text .fp-overflow{
+    overflow-y: initial;
 }
-.map{
-    width:400px;
-    height:240px;
+.section-text h2{
+    margin-top: -80px;
+    margin-bottom: 120px;
 }
-@media (max-width: 576px) {
-    .map{
-        width:300px;
-        height:150px;
+@media (max-width: 992px) {
+    .section-text .fp-overflow{
+        overflow-y: auto;
+    }
+    .section-text h2{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+#res-intro .text {
+    line-height: 3rem;
+}
+
+@media (max-width: 768px) {
+    #res-intro .text {
+        line-height: 2rem;
+        font-size: 14px;
     }
 
 }
+
+#chef {
+    background: #000000;
+    width: 880px;
+    max-width: 90%;
+    max-height: 750px;
+}
+
+#chef h2 {
+    margin-bottom: 24px;
+}
+
+.chef-intro {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.chef-intro--img {
+    width: 150px;
+    height: 150px;
+    background: #ababab;
+    overflow: hidden;
+    margin-right: 32px;
+    flex: 0 0;
+    flex-basis: 150px;
+}
+
+.chef-intro--text {
+    flex-shrink: 1;
+}
+
+@media (max-width: 768px) {
+    #chef {
+        padding: 24px;
+    }
+
+    .chef-intro {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chef-intro--img {
+        margin-bottom: 20px;
+    }
+
+}
+
+.note {
+    color: rgb(228, 228, 228);
+    font-size: 0.8em;
+    text-align: left;
+    max-width: 600px;
+    max-height: 360px;
+    overflow-y: scroll;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid rgb(58, 58, 58);
+    padding: 20px;
+
+}
+.note::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+.note::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .7);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+@media (max-width: 576px) {
+    .note {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+.map {
+    width: 400px;
+    height: 240px;
+}
+
+@media (max-width: 576px) {
+    .map {
+        width: 300px;
+        height: 150px;
+    }
+
+}
+
 #goReserve {
     width: 64px;
     position: fixed;
@@ -253,18 +352,22 @@ p {
     cursor: pointer;
     z-index: 2;
 }
-#goReserve:hover{
-   bottom: 86px;
+
+#goReserve:hover {
+    bottom: 86px;
 }
-#goReserve img{
+
+#goReserve img {
     width: 100%;
 }
+
 @media (max-width: 992px) {
     #goReserve {
         width: 48px;
     }
 
 }
+
 #goTop {
     background: rgba(255, 255, 255, 0.198);
     position: absolute;
