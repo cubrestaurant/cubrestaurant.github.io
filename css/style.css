@@ -61,9 +61,11 @@ p {
     line-height: 5em;
     font-size: 28px;
 }
-#fullpage{
+
+#fullpage {
     max-height: 100vh;
 }
+
 .people-info {
     display: inline-block;
     font-size: 1em;
@@ -95,8 +97,8 @@ p {
 
 @media (max-width: 576px) {
     .nav-logo {
-        top: 24px;
-        width: 60px;
+        top: 14px;
+        width: 64px;
     }
 
 }
@@ -122,13 +124,17 @@ p {
 @media (max-width: 992px) {
     .scm a {
         font-size: 26px;
-        padding: 20px 10px;
     }
 }
 
 @media (max-width: 576px) {
     .scm {
-        display: none;
+        right: 60px;
+    }
+
+    .scm a {
+        font-size: 26px;
+        padding: 10px 10px;
     }
 
 }
@@ -142,8 +148,12 @@ p {
         margin: 20px;
     }
 
-}
+}@media (max-width: 376px) {
+    .section h2 {
+        margin-top: 0px;
+    }
 
+}
 .section-img {
     background: url(../images/mountain.png);
     background-position: center center;
@@ -179,6 +189,7 @@ p {
     overflow-y: scroll;
     text-align: center;
 }
+
 .section-imgtext--text::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 5px;
@@ -187,8 +198,9 @@ p {
 .section-imgtext--text::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(255, 255, 255, .7);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
+
 .section-imgtext--text>div {
     padding: 12px;
 }
@@ -223,23 +235,31 @@ p {
     padding: 24px;
     text-align: center;
 }
-.section-text .fp-overflow{
+
+.section-text .fp-overflow {
     overflow-y: initial;
 }
-.section-text h2{
+
+.section-text h2 {
     margin-top: -80px;
     margin-bottom: 120px;
 }
+
 @media (max-width: 992px) {
-    .section-text .fp-overflow{
+    .section-text .fp-overflow {
         overflow-y: auto;
     }
-    .section-text h2{
+
+    .section-text h2 {
         margin-top: 40px;
         margin-bottom: 40px;
     }
 }
-
+@media (max-width: 376px) {
+    .section-text h2 {
+        margin-top: 0px;
+    }
+}
 #res-intro .text {
     line-height: 3rem;
 }
@@ -251,7 +271,26 @@ p {
     }
 
 }
-
+#sec_team>div {
+    width: 75%;
+    margin: 0 auto;
+}
+#sec_team>div>div>div {
+    padding: 32px;
+}
+@media (max-width: 576px) {
+    #sec_team>div>div>div {
+        padding: 14px;
+    }
+    #sec_team>div {
+        width: 100%;
+    }
+}
+@media (max-width: 376px) {
+    #sec_team>div>div>div {
+        padding: 4px;
+    }
+}
 #chef {
     background: #000000;
     width: 880px;
@@ -303,15 +342,17 @@ p {
     font-size: 0.8em;
     text-align: left;
     max-width: 600px;
-    max-height: 360px;
+    max-height: 340px;
     overflow-y: scroll;
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
     border: 1px solid rgb(58, 58, 58);
     padding: 20px;
+    z-index: 1;
 
 }
+
 .note::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 5px;
@@ -320,8 +361,9 @@ p {
 .note::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(255, 255, 255, .7);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
+
 @media (max-width: 576px) {
     .note {
         width: 90%;
@@ -330,6 +372,7 @@ p {
         margin-top: 30px;
     }
 }
+
 .map {
     width: 400px;
     height: 240px;
