@@ -148,18 +148,42 @@ p {
         margin: 20px;
     }
 
-}@media (max-width: 376px) {
+}
+
+@media (max-width: 376px) {
     .section h2 {
         margin-top: 0px;
     }
 
 }
+
 .section-img {
-    background: url(../images/mountain.png);
-    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/mountain.png);
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
+    /* transition: 5s;
+    animation-name: myAnimation;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; */
 }
+
+/* @keyframes myAnimation {
+    50% {
+        background-image: url(../images/field.png);
+    }
+
+    99.99% {
+        background-image: url(../images/grass.jpeg);
+    }
+} */
 
 
 .section-imgtext>div {
@@ -255,11 +279,13 @@ p {
         margin-bottom: 40px;
     }
 }
+
 @media (max-width: 376px) {
     .section-text h2 {
         margin-top: 0px;
     }
 }
+
 #res-intro .text {
     line-height: 3rem;
 }
@@ -271,26 +297,32 @@ p {
     }
 
 }
+
 #sec_team>div {
     width: 75%;
     margin: 0 auto;
 }
+
 #sec_team>div>div>div {
     padding: 32px;
 }
+
 @media (max-width: 576px) {
     #sec_team>div>div>div {
         padding: 14px;
     }
+
     #sec_team>div {
         width: 100%;
     }
 }
+
 @media (max-width: 376px) {
     #sec_team>div>div>div {
         padding: 4px;
     }
 }
+
 #chef {
     background: #000000;
     width: 880px;
