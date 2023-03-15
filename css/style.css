@@ -311,6 +311,7 @@ p {
 @media (max-width: 576px) {
     #sec_team>div>div>div {
         padding: 14px;
+        font-size: 12px;
     }
 
     #sec_team>div {
