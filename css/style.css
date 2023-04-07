@@ -158,7 +158,7 @@ p {
 }
 
 .section-img {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(../images/cover.jpeg);
     background-position: center;
