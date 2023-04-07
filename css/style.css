@@ -160,7 +160,7 @@ p {
 .section-img {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/cover.png);
+    background-image: url(../images/cover.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -283,6 +283,41 @@ p {
     }
 
 }
+@media (max-width: 576px) {
+    #res-intro .text {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #sec-menu .text {
+        line-height: 1.6rem;
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 576px) {
+    #sec-menu .text{
+        font-size: 13px;
+    }
+
+
+}
+@media (max-width: 768px) {
+    #sec-acess .text {
+        line-height: 1.6rem;
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 576px) {
+    #sec-acess .text{
+        font-size: 13px;
+    }
+
+
+}
 
 #sec_team>div {
     width: 75%;
@@ -292,18 +327,22 @@ p {
 #sec_team>div>div>div {
     padding: 32px;
 }
+
 #sec_team>div>div>div>p {
     margin-bottom: 8px;
 }
+
 @media (max-width: 576px) {
     #sec_team>div {
         width: 100%;
     }
+
     #sec_team>div>div>div {
         width: 120px;
         padding: 14px;
         font-size: 12px;
     }
+
     #sec_team>div>div>div>p {
         margin-bottom: 4px;
     }
@@ -381,6 +420,12 @@ p {
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 5px;
+    height: 5px;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    height: 5px !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -456,6 +501,7 @@ p {
     box-shadow: 0 0 10px #000000;
     font-size: 12px;
 }
+
 @media (max-width: 992px) {
 
     #goTop {
@@ -466,6 +512,7 @@ p {
     }
 
 }
+
 footer {
     position: absolute;
     bottom: 0px;
